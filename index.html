@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>카페 띠아모</title>
+    <!--파비콘-->
+    <link href="img/pavicon-1.png" type="imge/icon" rel="shorcut icon">
+    <!--외부 css-->
+    <link href="CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="CSS/jquery.bxslider.css" type="text/css" rel="stylesheet"> 
+    
+    <script src="js/jquery-3.5.1.js">
+    
+    </script>
+    <script src="js/jquery.bxslider.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+          auto:true 
+          
+    });
+        $('.bx-wrapper .bx-controls-direction a').click(function(){
+            $(this).addClass('active');
+        });
+        
+        $('.bx-wrapper .bx-controls-direction a').mouseleave(function(){
+            $(this).removeClass('active');
+        });
+        
+});
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+           <div class="header_wrap">
+            <div class="top_area">
+             <p>TEL : 02-334-8901</p>   
+            </div>
+            <div class="logo">
+              <!--로고 클릭하면 항상 맨 처음 페이지로 이동해야 함-->
+               <a href="index.html">
+                <img src="img/logo-brown.png" alt="로고">
+                </a>
+            </div>
+            <!--내비게이션-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">카페 띠아모</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">띠아모 소개</a>
+                            </li>
+                            <li>
+                                <a href="#">브랜드컨셉</a>
+                            </li>
+                            <li>
+                                <a href="#">띠아모만의 특별함</a>
+                            </li>
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">젤라또</a>
+                            </li>
+                            <li>
+                                <a href="#">커피</a>
+                            </li>                           
+                            <li>
+                                <a href="#">베버리지</a>
+                            </li>
+                            <li>
+                                <a href="#">디저트</a>
+                            </li><li>
+                                <a href="#">MID상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장안내</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">매장검색</a>
+                            </li>
+                            <li>
+                                <a href="#">오픈예정매장</a>
+                            </li>                           
+                            <li>
+                                <a href="#">매장스토리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">가맹안내</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">띠아모만의 경쟁력</a>
+                            </li>
+                            <li>
+                                <a href="#">인테리어컨셉</a>
+                            </li>                           
+                            <li>
+                                <a href="#">창업절차</a>
+                            </li>
+                            <li>
+                                <a href="#">스마트창업</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="#">당첨자 발표</a>
+                            </li>                           
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">언론보도</a>
+                            </li>                           
+                            <li>
+                                <a href="#">미디어</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </div> <!--header_wrap(부분 끝)-->
+        </header>
+        <section class="slide slider">
+               <div><a href="#"><img src="img/slide1.png" alt="어린시절 달콤했던 솜사탕의 추억, 코튼캔디 젤라또"></a></div>
+               <div><a href="#"><img src="img/slide2.png" alt="눈으로 한 번, 입으로 한 번 딸기와의 심쿵 로맨스"></a></div>
+               <div><a href="#"><img src="img/slide3.png" alt="메리 크리스마스 리미티드 에디션:진저 친구들"></a></div>
+        
+        </section>
+        <section class="new">
+            <h1>카페 띠아모</h1>
+            <p>카페 띠아모에서 즐길 수 있는 것은?</p>
+            <ul>
+                <li><a href="#">
+                    <div class="photo"><img src="img/gelato.png" alt="젤라또"></div>
+                    <p>젤라또</p>
+                    <p>세계 75개국, 40% 점유. <br>110년의 역사 이탈리아 아이스크림</p>
+                </a></li>
+                <li><a href="#">
+                    <div class="photo"><img src="img/coffee-1.png" alt="커피"></div>
+                    <p>커피</p>
+                    <p>100% 아라비카 원두로 로스팅한 
+                        깊고, <br>진한 커피의 향을 느낄 수 있는 커피</p>
+                </a></li>
+                <li><a href="#">
+                    <div class="photo"><img src="img/desert1.png" alt="디저트"></div>
+                    <p>디저트</p>
+                    <p>카페 띠아모에서 즐길 수 있는
+                        <br>달콤한 수제 디저트</p>
+                </a></li>
+            </ul>
+        </section>
+        <section class="product">
+            <h1>오늘의 띠아모 PICK</h1>
+            <p>띠아모가 추천하는 Today's Pick</p>
+            <ul>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/choco-1.png" alt="쫀득한 초코">
+                    </div>
+                    <div class="front">#쫀득함
+                    <br>#입안 가득 달콤함</div>
+                    </div>
+                    <p>쫀득한 초코</p>
+                </li>
+               <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/strawberry-1.png" alt="딸기 라떼">
+                    </div>
+                    <div class="front">#부드러움
+                    <br>#새콤달콤한 딸기</div>
+                    </div>
+                    <p>딸기라떼</p>
+                </li>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/greentea-1.png" alt="그린티">
+                    </div>
+                    <div class="front">#진한 녹차
+                    <br>#달콤 쌉싸름</div>
+                    </div>
+                    <p>그린티</p>
+                </li>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/vanliachoco-1.png" alt="바닐라 초코칩">
+                    </div>
+                    <div class="front">#향긋한 바닐라
+                    <br>#오도독 초코칩</div>
+                    </div>
+                    <p>바닐라 초코칩</p>
+                </li>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/cottencandy-1.png" alt="코튼 캔디">
+                    </div>
+                    <div class="front">#한입에 사르르
+                    <br>#추억의 맛</div>
+                    </div>
+                    <p>코튼 캔디</p>
+                </li>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/blueberry-1.png" alt="블루베리 요거트">
+                    </div>
+                    <div class="front">#플레인 요거트
+                    <br>#블루베리&시리얼</div>
+                    </div>
+                    <p>블루베리 요거트</p>
+                </li>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/cherry-1.png" alt="체리 블러썸">
+                    </div>
+                    <div class="front">#한입 가득 체리향
+                    <br>#먹는 순간 봄</div>
+                    </div>
+                    <p>체리 블러썸</p>
+                </li>
+                <li>
+                    <div class="product_li">
+                    <div class="back">
+                        <img src="img/mango1.png" alt="망고라떼">
+                    </div>
+                    <div class="front">#달콤한 망고
+                    <br>#우유와의 환상조합</div>
+                    </div>
+                    <p>망고라떼</p>
+                </li>
+            </ul>
+        </section>
+        <section class="movie">
+            <h1>Cafe Tiamo Video</h1>
+            <p>카페 띠아모의 하루를 영상으로 느껴보세요</p>
+            <div class="movie_in">
+               <iframe width="1280" height="720" src="https://www.youtube.com/embed/07iP3IQvMSc?autoplay=1&amp;mute=1&amp;loop=1&amp;start=1&amp;playlist=07iP3IQvMSc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="service">
+           <!--배경 이미지 고정-->
+            <div class="fixed_bg"></div>
+                  <h1>story</h1>
+            <div class="service_in">   
+                <div class="left_s">
+                    <img src="img/ice-cream(girl).png" alt="아이스크림 먹는 아이">
+                </div>           
+
+               <div class="right_s">
+                    <h2>Tiamo with Gelato</h2>
+                    <p>카페 띠아모는 이탈리아 전역 어디에서나 사랑받는 ‘젤라또’를 
+                    국내에 널리 알리고, 한국인들도 
+                    좋은 아이스크림인 ‘젤라또’를 사랑할 수 있기를 
+                    바라는 마음이 브랜드 콘셉트 안에 녹아있습니다.
+                    젤라또와 함께 사랑 가득한 공간이 될 수 있기를 꿈꾸는 곳.
+                    그곳이 바로 카페 띠아모입니다.</p>
+
+               </div>                           
+            </div>
+        </section>
+        <section class="public">
+            <h1>new</h1>
+            <div class="public_in">
+                <ul>
+                    <li><a href="#">
+                        <img src="img/nitro-coffee.png" alt="니트로 커피">
+                        <p>니트로 커피</p>
+                        <p>풍성한 거품과 목넘김이 부드러운
+                            띠아모 니트로 커피만의 깊은 풍미를 느껴보세요!</p>
+                          </a></li>
+                    <li><a href="#">
+                        <img src="img/peach1.png" alt="새콤달콤 복숭아">
+                        <p>새콤달콤 복숭아</p>
+                        <p>천연 농축된 복숭아의 맛이 진하게 느껴지는
+                            복숭아 스무디를 만나보세요!</p>         </a></li>
+                   <li><a href="#">
+                        <img src="img/love-story.png" alt="달콤한 사랑고백">
+                        <p>달콤한 사랑고백</p>
+                        <p>새콤한 딸기와 부드럽고 달콤한 맛이 특징인
+                            딸기 팬케이크 & 딸기 쇼콜라 라떼</p>         
+                         </a></li>
+                    <li><a href="#">
+                        <img src="img/merry-cronut.png" alt="메리 크로넛">
+                        <p>메리 크로넛</p>
+                        <p>크리스마스에 즐기는 띠아모만의
+                            바삭 촉촉 도넛 크로넷</p>         
+                       </a></li>                 
+                </ul>
+            </div>
+            
+            <!--더보기 버튼-->
+            <a href="#">+ 더보기</a>
+        </section>
+        <section class="site">
+            <h1>Instagram</h1>
+            <ul>
+                <li><a href="#">
+                    <img src="img/glato.png" alt="젤라또 모음">
+                </a></li>
+                
+                <li><a href="#">
+                    <img src="img/instargram-1.png" alt="딸기 라떼 사진">
+                </a></li>
+                
+                <li><a href="#">
+                    <img src="img/instargram-2.png" alt="동물 젤라또">
+                </a></li>
+                
+                <li><a href="#">
+                    <img src="img/instargram-3.png" alt="과일 빙수 젤라또">
+                </a></li>
+                
+                <li><a href="#">
+                    <img src="img/instargram-4.png" alt="망고라떼 젤라또">
+                </a></li>
+                
+                <li><a href="#">
+                    <img src="img/instargram-5.png" alt="사랑고백 디저트">
+                </a></li>
+            </ul>
+        </section>
+        <footer>
+            <div class="footer_in">
+                <div class="info">                
+                    <ul>
+                        <li><a href="#">
+                            <p>Blog</p>
+                            <img src="img/blog.png" alt="블로그">
+                        </a></li>
+                        <li><a href="#">
+                            <p>Facebook</p>
+                            <img src="img/facebook.png" alt="페이스북">
+                        </a></li>
+                        <li><a href="#">
+                            <p>Instagram</p>
+                            <img src="img/instagram.png" alt="인스타그램">
+                        </a></li>
+                        <li><a href="#">
+                            <p>Youtube</p>
+                            <img src="img/youtube-icon.png" alt="유튜브">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="addr">
+                  <div class="info2">
+                     <ul>
+                      <li>
+                           <img src="img/phone.png" alt="휴대폰">
+                           <p>02-334-8901</p>
+                       </li>
+                       <li>
+                           <img src="img/fax.png" alt="팩스">
+                           <p>02-463-8398</p>
+                       </li>
+                       <li>
+                           <img src="img/mail.png" alt="이메일">
+                           <p>master@ti-amo.co.kr</p>
+                       </li>
+                      </ul>
+                  </div>
+                  <div class="info3">
+                   <ul>                       
+                       <li><a href="#">회사소개</a></li>
+                       <li><a href="#">가맹상담</a></li>
+                       <li><a href="#">개인정보처리방침</a></li>
+                       <li><a href="#">이메일무단수집거부</a></li>
+                   </ul>
+                    </div>
+                    <address>
+                        서울특별시 송파구 백제고분로 50길 44 2층 (주)베모스 대표이사 : 김성동   사업자등록번호 : 206-86-10982<br>
+        copyright(c) 2016 TIAMO KOREA ALL RIGHTS RESERVED
+                    </address>
+                </div>
+                <div class="sns">
+                    <select name="" id="">
+                        <option value="1">FAMILY SITE</option>
+                        <option value="1">TIAMO SHOP</option><option value="1">TIAMO KOREA</option>
+                        <option value="1">TIAMO COFFEE</option>
+                    </select>
+                    <ul>
+                        <li><a href="#"><img src="img/option.png" alt="설정"></a></li>
+                        <li><a href="#"><img src="img/share.png" alt="공유하기"></a></li>
+                        <li><a href="#"><img src="img/up.png" alt="페이지 위로가기"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+         
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

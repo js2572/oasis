@@ -1,0 +1,475 @@
+    * { margin: 0; padding: 0;}
+    li { list-style: none; }
+    a { display: block; /*인라인요소-블록요소*/
+    text-decoration: none; color: #333;}
+    img { width: 100%; }
+    body {
+    background-color: #f3f1e0;
+    }
+    .wrap { width: 100%; }
+header {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    float: left;
+    z-index: 100;
+    position: relative;
+    /*z-index는 반드시 position과 함께 기술*/
+}
+header .header_wrap {
+    width: 1740px;
+    height: 120px;
+    margin: 0 auto;
+}
+header .top_area {
+    width: 1740px;
+    height: 40px; 
+    margin: 0 auto;
+}
+header .top_area p {
+    font-size: 12px;
+    padding: 10px; /*안쪽여백*/
+}
+header .logo {
+    width: 180px;
+    float: left;
+    margin: 10px; /*바깥쪽여백*/
+    
+}
+header nav {
+    float: left;
+    margin-left: 300px; /*왼쪽 여백*/
+    margin-top: 20px;    /*위쪽 여백*/
+}
+/*주메뉴*/
+header nav > ul > li {
+    float: left;
+}
+header nav > ul > li > a {
+    padding: 5px 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+header nav > ul > li:hover > a {
+    color: #694438;
+}
+/*서브메뉴*/
+header nav .sub {
+    border-top: 3px solid #694438;
+    /*서브메뉴 영역의 위쪽 테두리*/
+    display: none;
+    background-color: rgba(0,0,0,0.6);
+}
+header nav .sub li:first-child {
+    margin-top: 16px;
+    /*첫번째 서브메뉴의 위쪽 여백*/
+}   
+header nav .sub li:last-child {
+    padding-bottom: 20px;
+    /*첫번째 서브메뉴의 위쪽 여백*/
+}   
+header nav .sub li a {
+    font-size: 13px;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    
+}
+header nav .sub li a:hover{
+    text-decoration: underline;
+    color: wheat;
+}
+/*주메뉴에 마우스 오버했을 때 서브메뉴 보임*/
+header nav > ul > li:hover .sub {
+    display: block;
+}
+/*슬라이드*/
+section.slide {
+    width: 100%;
+    float: left;
+    position: relative;
+    /*.prev와 .next자식객체의 위치 기준이 slide임*/
+}
+section.slide ul {
+    width: 100%;
+    height: 780px;
+    position: relative; 
+    /*li자식객체의 위치와 크기의 기준이 ul임*/
+}
+section.slide ul li {
+    width: 100%;
+    height: 780px;
+    position: absolute; /*이미지 겹침*/
+}
+section.slide .prev {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 56px;
+    top:50%;
+    margin-top:-28px;
+}
+section.slide .next {
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 56px;
+    top: 50%;
+    margin-top:-28px;
+}
+section.new {
+    width: 100%;
+    padding-top: 100px;
+    float: left;
+}
+section.new h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+section.new p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+section.new ul {
+    width:1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+section.new ul li {
+    width: 400px;
+    margin-right: 40px;
+    float: left;
+}
+/*마지막 li의 오른쪽 여백 0 */
+section.new ul li:last-child {
+    margin-right: 0;
+}
+section.new  ul li .photo {
+    width: 400px;
+    height: 400px;
+}
+
+section.new ul li p {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    margin-top: 0;
+}
+/*product*/
+section.product {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+}
+section.product h1 {
+    text-align: center;
+    font-size: 24px;
+}
+section.product p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+section.product ul {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+section.product ul li {
+    float: left;
+    width: 305px;
+    height: 350px;
+    margin-right: 20px;
+}
+section.product ul li:nth-child(4n) {
+    margin-right: 0;
+}
+section.product ul li .product_li {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+section.product ul li .product_li div {
+    position: absolute;
+}
+section.product ul li .product_li .front {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+    line-height: 30px;
+}
+section.product ul li > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/*li영역에 마우스 오버했을 때 .front 보임*/
+section.product ul li:hover .front {
+    display: block;
+}
+/*영상*/
+section.movie {
+    width:100%;
+    float: left;
+}
+section.movie h1 {
+    text-align: center;
+    font-size: 24px;
+}
+section.movie p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+section.movie .movie_in {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+section.bovie .movie_in iframe {
+    width: 100%;
+}
+
+/*Tiamo with Gelato*/
+section.service {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+}
+section.service .fixed_bg {
+    position: absolute;
+    width: 100%;
+    height: 330px;
+    background-image: url(../img/bg-1.jpg);
+    background-attachment: fixed;
+    z-index: 1;        /*뒤쪽으로 순서 변경*/
+}
+section.service h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+    z-index: 10;
+    position: relative;
+    /*z-index와 position 같이 사용*/
+}
+section.service .service_in {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+    z-index: 15;
+}
+section.service .service_in div {
+    width: 50%;
+    height: 400px;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+section.service .service_in .left_s {
+    padding: 0;
+}
+
+
+section.service .service_in .right_s {
+    background-color: #fff;
+}
+section.service .service_in .right_s h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #444;
+}
+
+section.service .service_in .rigtht_s p {
+    line-height: 28px;
+    font-size: 14px;
+    text-align: justify; /*글자 양쪽 정렬*/
+}
+section.service .service_in .right_s a {
+    width: 170px;
+    height: 20px;
+    padding: 7px;
+    border: px solid #999;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+section.public {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+}
+section.public h1 {
+    text-align: center;
+    font-size: 24px;
+}
+sectiom.ppublic .public_in {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+section.public .public_in ul li {
+    width: 319px;
+    float: left;
+    border-right: none;
+    margin-bottom: 60px;
+}
+section.public .public_in ul li p {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #c0af8d;
+    color: #fff;
+}
+section.public .public_in li:hover {
+    margin-top: -7px;
+    transition: all 0.5s;
+}
+/*public li영역의 이미지만 들어 있는 영역*/
+section.public .public_in li li div {
+    width: 320%;
+    height: 440px;
+}
+section.public h1 {
+    text-align: center;
+    font-size: 24px;
+}
+section.public .public_in {
+    width: 1281px;
+    margin: 0 auto;
+    margin-top:  80px;
+}
+
+section.public > a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    clear: both;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*연관 사이트*/
+section.site {
+    width: 100%;
+    float: left;
+    padding-top: 100px;
+}
+section.site h1 {
+    font-size: 24px;
+    text-align: center;
+}
+section.site ul {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+section.site ul li {
+    width: 210px;
+    float: left;
+    margin-right: 4px;
+}
+section.site ul li:last-child {
+    margin-right: 0;
+}
+footer {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    
+}
+
+footer .footer_in {
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+footer .footer_in .info {
+    float: left;
+}
+footer .footer_in .info ul li {
+    height: 50px;
+    border-bottom: 1px solid #999;
+}
+footer .footer_in .info ul li p {
+    width: 100px;
+    float: left;
+    font-size: 14px;
+    margin: 10px;
+    
+}
+footer .footer_in .info ul li img {
+    width: initial;
+    margin: 10px;
+    float: left;
+}
+footer .footer_in .addr {
+    width: 750px;
+    float: left;
+    margin-left: 100px;
+}
+
+footer .footer_in .addr .info2 {
+    margin-bottom: 80px;
+}
+
+footer .footer_in .addr .info2 ul li {
+    float: left;
+    
+}
+
+footer .footer_in .addr .info2 ul li img {
+    width: 20px;
+    margin: 10px;
+    float: left;
+}
+
+footer .footer_in .addr .info2 ul li p {
+    font-size: 14px;
+    float: left;
+    line-height: 34px;
+}
+footer .footer_in .addr .info3 {
+    clear: both;
+    
+}
+
+footer .footer_in .addr .info3 ul li {
+    float: left;
+}
+footer .footer_in .addr .info3 ul li a {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+}
+
+footer .footer_in .addr address {
+    clear: both;
+    font-style: normal;
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 24px;
+}
+footer .footer_in .sns {
+    float: right;
+}
+footer .footer_in .sns ul li {
+    float: left;
+    margin: 10px;
+    margin-top: 90px;
+}
